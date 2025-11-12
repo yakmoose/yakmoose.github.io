@@ -3,81 +3,61 @@
     <head>
         <title>John Lennard</title>
         <meta charset="utf8">
-            <style>
-            body {
-                font-family: "Helvetica Neue", "Helvetica", "Arial",serif;
-                font-size: 12pt;
-                display: flex;
-            }
-            article {
-                flex: auto;
-                max-width: 60em;
-                margin: auto;
-            }
-
-            h2 {
-                font-size: 1.2em;
-                font-weight: bold;
-            }
-
-            h3 {
-                font-size: 1.1em;
-                font-weight: bold;
-            }
-        </style>
+        <link rel="stylesheet" href="make-me-perty.css">
     </head>
     <body>
-        <article>
-            <section id="personal-details">
-                <header>
-                    <h1>John Lennard</h1>
-                    <p><a href="mailto:john@yakmoo.se">john@yakmoo.se</a></p>
-                    <p><a href="tel:+6421376152">+64 21 376152</a></p>
-                    <p><a href="https://github.com/yakmoose">github.com/yakmoose</a></p>
-                    <p><a href="https://www.linkedin.com/in/johnlennard/">linkedin.com/in/johnlennard/</a></p>
-                </header>
-            </section>
-            <section id="overview">
+        <article itemscope itemtype="https://schema.org/Person">
+            <header>
+                <h1 itemprop="name">John Lennard</h1>
+                <ul>
+                    <li itemprop="pronouns">He/Him</li>
+                    <li><a itemprop="email" href="mailto:john@yakmoo.se">john@yakmoo.se</a></li>
+                    <li><a itemprop="telephone" href="tel:+6421376152">+64 21 376152</a></li>
+                    <li><a href="https://github.com/yakmoose">github.com/yakmoose</a></li>
+                    <li><a href="https://www.linkedin.com/in/johnlennard/">linkedin.com/in/johnlennard/</a></li>
+                    <li><a href="https://rrf.rsm.govt.nz/ui/search/callsign?searchText=ZL1YAK&searchType=CALLSIGN&orderBy=callsign&page=1&pageSize=20" itemprop="callsign">ZL1YAK</a></li>
+                </ul>
+            </header>
+
+            <section id="overview" class="still-not-happy">
                 <h2>About me</h2>
-                <p>In 2001 my business partner and I founded <a href="https://www.gravitate.co.nz">Gravitate.co.nz</a> when we launched Artfind.co.nz,
+                <p>
+                    In 2001 my business partner and I founded <a href="https://www.gravitate.co.nz">Gravitate.co.nz</a> when we launched Artfind.co.nz,
                     a repository and service for New Zealand artists and galleries to promote themselves. Over the next 20 years we grew Gravitate
-                    into a full service web agency providing strategy, design, ux, development, implementation and hosting to a wide
+                    into a full-service web agency providing strategy, design, ux, development, implementation, and hosting to a wide
                     range of businesses and charities.
                 </p>
+
                 <p>
-                    My role within Gravitate as Technical Director is primarily focused on application analysis, architecture planning, software
-                    development, infrastructure, tooling, developer support and security. I have worked with technologies such as PHP, Javascript,
-                    Go and Terraform to help solve problems for clients and our development team. I have strong experience with Linux and a deep understanding
-                    of internet technologies and adapt well to new tools and development environments and languages.
+                    My role within Gravitate as Technical Director has been primarily focused on application analysis, architecture planning, software
+                    development, infrastructure, tooling, developer support, and security. I have worked with technologies such as PHP, JavaScript,
+                    Go, and Terraform to help solve problems for clients and our development team. I have strong experience with Linux and a deep understanding
+                    of internet technologies and adapt well to new tools and development environments and languages. I led the team of developers at Gravitate and mentored junior staff.
                 </p>
+
                 <p>
                     I enjoy solving problems and writing software and have a strong interest in not only developing solutions but also contributing back to
-                    community projects and tools that I use. I have contributed to the Johnny 5 javascript robotics framework, bug fixes to libraries such as RayGun and GPSD, and the Terraform provider
-                    and Go library for our hosting partner Sitehost.
+                    community projects and tools that I use. I have contributed to the Johnny 5 JavaScript robotics framework, fixes to libraries such as RayGun and GPSD, and the Terraform provider
+                    and the Go library and Terraform provider for our hosting partner Sitehost.
                 </p>
+
+                <p>Key roles and responsibilities:</p>
+                <ul>
+                    <li>Solution analysis and architecture</li>
+                    <li>Project scoping, quoting and proposals</li>
+                    <li>Software development &mdash; PHP, JavaScript, GO</li>
+                    <li>Platform and tooling development &mdash; PHP, Go, Bash</li>
+                    <li>CMS platform development</li>
+                    <li>Developer hiring</li>
+                    <li>Developer support</li>
+                    <li>Hosting and Infrastructure management and automation - Terraform</li>
+                    <li>Fastly CDN management</li>
+                    <li>Linux server administration</li>
+                </ul>
             </section>
-            <section id="work">
-                <h2>Work and significant projects</h2>
-                <section class="project">
-                    <hgroup>
-                        <h3><a href="https://www.gravitate.co.nz">Gravitate &mdash; 2001 - 2025</a></h3>
-                    </hgroup>
-                    <div>
-                        <p>As a founder and director of Gravitate I have been involved in all aspects of the business, however my key role as
-                            the Technical director has seen me be responsible for:
-                        </p>
-                        <ul>
-                            <li>Hosting and Infrastructure management and automation</li>
-                            <li>CMS platform development</li>
-                            <li>Client solution analysis and architecture</li>
-                            <li>Software development</li>
-                            <li>Tooling development</li>
-                            <li>Developer support</li>
-                            <li>Fastly CDN management</li>
-                            <li>Linux server administration</li>
-                        </ul>
-                    </div>
-                </section>
+
+            <section id="projects">
+                <h2>Significant projects</h2>
                 <section class="project">
                     <hgroup>
                         <h3><a href="https://www.goldenegghunt.co.nz">Farmer Brown Golden Egg Hunt</a></h3>
@@ -85,25 +65,30 @@
                     <div>
                         <p>
                             The Farmer Brown Golden Egg Hunt was an AR experience developed in partnership with <a href="https://www.workcommunications.co.nz">Work Communications</a> to promote Farmer Brown eggs.
-                            The game made use of <a href="https://www.8thwall.com">Niantic 8thwall</a> to create an interactive egg hunt and used
-                            a combination of <a>Open Street Map</a> data and random points to create collectable eggs for people to find and collect.
-                            Upon finding an egg users could then switch to a camera mode to view the egg in the real world and collect a prize.
+                            The game made use of <a href="https://www.8thwall.com">Niantic 8thwall</a> to create a mobile egg hunt game. The game gave away $100k of prizes each year it ran.
                         </p>
+
                         <p>
-                            Golden Egg Hunt made use of various social login mechanisms from Facebook, Google and Apple to create a simple login flow that respected end users' privacy by only collecting user data when needed.
-                            The database was optimised for geospatial data and also allowed for detailed reporting and analysis.
+                            The mobile game was an interactive egg hunt that presented the user with a 3d map of their surroundings and a mixed reality view to collect the eggs once found. People could
+                            then collect eggs to obtain prizes. Game application was responsible for tracking available and collected eggs, user onboarding, prize redemption, and reporting.
                         </p>
-                        <p>Key technologies and functionality:</p>
+
+                        <p>
+                            As the primary developer on this project, I was responsible for working with the client to define the game process, rules, and functionality. I then worked
+                            with our design team to wirefame the workflows and user interface. I was then responsible for the full implementation of the game and supporting systems.
+                        </p>
+
+                        <p>Responsibilities:</p>
                         <ul>
-                            <li>Niantic 8thWall AR framework</li>
-                            <li>OAuth login with Apple, Facebook and Google</li>
-                            <li>AFrame 3d javascript library</li>
-                            <li>MySQL geospatial functionality</li>
-                            <li>Javascript location and orientation functionality</li>
-                            <li>Fastly CDN</li>
-                            <li>Symfony frontend and API development</li>
+                            <li>Project scoping, feasibility tests, and documentation</li>
+                            <li>Implement frontent gameplay in JavaScript  with the Niantic 8thWall AR framework</li>
+                            <li>Implement game login mechanism with Apple, Facebook, and Google login providers</li>
+                            <li>Design database schema for storage of player, prize collectables, and claimed prize data</li>
+                            <li>Geospatial functionality &mdash; mobile device location and orientation handling, Open Streetmap integration, and MySQL geospatial queries</li>
                             <li>Terraform infrastructure provisioning and management</li>
-                            <li>Logging and reporting with BetterStack, Raygun and SQL queries</li>
+                            <li>Infrastructure specification and provisioning</li>
+                            <li>Reporting, logging and monitoring with BetterStack, Raygun</li>
+                            <li>Management reports for stakeholders including &mdash; Game play data, Prize draw and collection, geographical usage heatmaps</li>
                         </ul>
                     </div>
                 </section>
@@ -113,21 +98,26 @@
                     </hgroup>
                     <div>
                         <p>
-                            Myhumm is a venture between <a href="https://www.ecrotek.co.nz">Ecrotek NZ</a> and <a href="https://www.awanuiscientific.co.nz">Awanui Scientific</a>
-                            to provide easy to use and flexible testing of honey to apiarists, exporters, blenders and packers of honey.
-                            Myhumm is a React based portal for honey producers to place orders for honey lab tests, view their test results, create custom reports, and run blending optimisations.
-                            It provides an API that is used by Gribbles Scientific's laboratory systems to handle the placement of orders, update statuses, and collect results. It also provides
+                            My Humm is a venture between <a href="https://www.ecrotek.co.nz">Ecrotek NZ</a> and <a href="https://www.awanuiscientific.co.nz">Awanui Scientific</a>
+                            to provide easy-to-use and flexible testing of honey to apiarists, exporters, blenders, and packers of honey.
+                        </p>
+
+                        <p>
+                            Myhumm is a React-based portal for honey producers to place orders for honey lab tests, view their test results, create custom reports, and run blending optimisations.
+                            It provides an API used by Awanui Scientific's laboratory systems to manage the placement of orders, update statuses, and deliver results. It also provides
                             a honey blending optimiser service that takes a set of test results and optimises the blending of honey to meet a set of requirements.
                         </p>
-                        <p> As the lead developer and architect on this project I was responsible for: </p>
+
+                        <p> As the lead developer and architect on this project, I was responsible for: </p>
                         <ul>
-                            <li>Javascript/React user interface implementation</li>
-                            <li>Data modelling</li>
+                            <li>Scoping and planning with the client and their project management team</li>
+                            <li>React user interface implementation</li>
+                            <li>Data modelling and implementation</li>
                             <li>Symfony/PHP backend service development</li>
-                            <li>Implementation of provided coin-or/cbc optimization model using Python Azure Functions</li>
-                            <li>GitHub Actions CI pipeline setup for container builds and deployment to Azure</li>
+                            <li>Implementation of a provided coin-or/cbc optimization model using Python Azure Functions</li>
                             <li>Infrastructure design specification</li>
-                            <li>Azure, Fastly CDN and DNS management using Terraform</li>
+                            <li>GitHub Actions CI pipeline setup for container builds and deployment to Azure</li>
+                            <li>Azure, Fastly CDN, and DNS management using Terraform</li>
                             <li>PDF generation of customised lab reports for exporters</li>
                         </ul>
 
@@ -139,15 +129,19 @@
                     </hgroup>
                     <div>
                         <p>
-                            Gravitate were engaged by Smith and Smith/Belron NZ for the design and rebuild of their web presence. This complex project involved the implementation
-                            of a new book online platform that is now handling a significant portion of their business. This project required significant
-                            integration work and expanded to also include the design and management of their website Azure tenancy. I worked on developing the initial specifications
-                            and scoping of the project along with the design and provisioning of the build pipeline and Azure infrastructure using Terraform and GitHub actions.
+                            Gravitate were engaged by Smith and Smith/Belron NZ for the design and rebuild of their web presence along with implementing online booking.
+                        </p>
+                        <p>
+                            This complex project involved the implementation of a new book online platform that is now handling a significant portion of their business.
+                            This project required significant integration work and expanded to also include the design and management of their website Azure tenancy.
+                        </p>
+                        <p>
+                            I worked on developing the initial specifications, scoping, and costing. I then managed the design and provisioning of the build pipeline and Azure infrastructure.
                         </p>
                         <p>Responsibilities:</p>
                         <ul>
                             <li>Infrastructure design specifications</li>
-                            <li>GitHub Actions based CI Pipeline</li>
+                            <li>GitHub Actions CI Pipeline</li>
                             <li>Azure provisioning and management using Terraform</li>
                             <li>Fastly CDN configuration</li>
                             <li>Metrics and api monitoring implementation</li>
@@ -160,16 +154,17 @@
                     </hgroup>
                     <div>
                         <p>
-                            The Fred Hollows Foundation is a charity that works towards ending preventable blindness in the pacific. Gravitate were approached to help rebuild their site.
-                            We focussed on developing a rich framework for enabling deeper interactive story telling and integration with their existing donations platforms. Fred Hollows also
-                            take a strong stance on cyber-security and my role has required me to work with their PCI auditors and security providers to ensure that their site is safe and secure for their donors.
+                            The Fred Hollows Foundation is a charity that works towards ending preventable blindness in the Pacific. Gravitate were approached to help rebuild their site.
+                            We focussed on developing a rich framework of UI elements for enabling deeper interactive story telling and integration with their existing donations platforms.</p>
+                        <p>
+                            Fred Hollows have a strong stance on cyber-security, and in my role I worked with their IT team, PCI auditors, and security providers to ensure that their site met their compliance requirements.
                         </p>
                         <p>Responsibilities: </p>
                         <ul>
-                            <li>PCI Compliance</li>
-                            <li>Security updates and remediation</li>
+                            <li>Annual website PCI compliance documentation and improvements</li>
+                            <li>Security review, updates, and remediation</li>
                             <li>Raisers Edge/Online express donations integration</li>
-                            <li>Implementation of field level encryption framework for personal data</li>
+                            <li>Implementation of a field level encryption framework for storing personal data</li>
                             <li>Server provisioning and hardening</li>
                             <li>Fastly CDN configuration</li>
                             <li>Implementation of SIEM platform (Wazuh)</li>
@@ -248,19 +243,35 @@
                             Subsequent versions of the application also included tools for assembling the language resource packs and the ability to purchase
                             and download new language sets from a centralised server.
                         </p>
-                        <p>It was released not long after the iPhone 3g was released and I implemented early prototypes along with the first release version. I then
-                            managed subsequent releases and updates with our design team and external mobile developers.</p>
+                        <p>
+                            It was released not long after the iPhone 3g was released, and I implemented early prototypes along with the first release version. I then
+                            managed later releases and updates with our design team and external mobile developers.
+                        </p>
                         <p>Responsibilities: </p>
                         <ul>
                             <li>Project management</li>
                             <li>iOS application implementation</li>
                             <li>Backend service for purchasing and downloading of language packs</li>
                             <li>Tooling for supporting content editors and collectors</li>
-                            <li>Supported Android development team</li>
-                            <li>Developed cross-platform Windows Desktop and Mobile application using C# and Javascript</li>
+                            <li>Supported Android and iOS development team</li>
+                            <li>Developed cross-platform Windows Desktop and Mobile application using C# and JavaScript</li>
                         </ul>
                     </div>
                 </section>
+            </section>
+            <section>
+                <h2>Other clients I've worked with on projects</h2>
+                <ul>
+                    <li><a href="https://www.suzuki.co.nz">Suzuki New Zealand</a></li>
+                    <li><a href="https://www.habitat.org.nz">Habitat for Humanity</a></li>
+                    <li><a href="https://www.arvida.co.nz">Arvida</a></li>
+                    <li><a href="https://www.curekids.co.nz">Cure Kids</a> / <a href="https://www.rednoseday.co.nz">Red Nose Day</a></li>
+                    <li><a href="https://www.bedpost.co.nz">Bedpost</a></li>
+                    <li><a href="https://www.writersfestival.co.nz">Auckland Writers Festival</a></li>
+                    <li><a href="https://www.aaf.co.nz">Auckland Arts Festival</a></li>
+                    <li><a href="https://www.foundationnorth.org.nz">Foundation North</a></li>
+                    <li><a href="https://www.pinnaclelife.co.nz">Pinnacle Life</a></li>
+                </ul>
             </section>
         </article>
     </body>

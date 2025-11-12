@@ -1,0 +1,44 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", "Arial",serif;
+    font-size: 12pt;
+    display: flex;
+
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 3em;
+}
+article {
+    flex: auto;
+    max-width: 60em;
+    margin: auto;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0.2em
+}
+
+header img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.not-happy {
+    color: red;
+    background: yellow;
+    font-style: italic;
+}
